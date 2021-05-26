@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgba(236, 231, 231, 0.582);
+    font-family: "Roboto",
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-family: "Roboto",
+        sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.appear {
+    display: block !important;
+}
+
+
+
+
+/* header styling */
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+
+    background: rgb(47, 47, 117);
+}
+
+.logo {
+
+    padding-top: 25px;
+    padding-left: 3rem;
+
+}
+
+.logo h2 {
+    color: white
+}
+
+.links {
+
+    margin-top: 28px;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px;
+
+}
+
+.link li a {
+    display: block;
+
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+     height: 100vh;
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+     url("../image/contact.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size:cover;
+       padding-top: 3rem;
+    
+   
+
+}
+
+
+.contact-heading h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align:center ;
+    color: white;
+}
+
+
+.contact-heading p{
+    text-align: center ;
+    word-spacing: 5px;
+    color:white
+}
+
+.contact-info{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  
+}
+
+.contact-form {
+    width: 40%;
+    
+}
+.contact-form form{
+    width: 100%;
+}
+.contact-form form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact-form form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.contact-form form .btn{
+     width: 100%;
+     padding: 15px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     background: rgb(47, 47, 117);
+     border: none;
+
+}
+
+.contact-address{
+   
+    width: 40%;
+    padding: 20px;
+}
+
+.sub-address {
+    display: flex;
+    margin-bottom: 3rem;
+    gap: 30px;
+    
+    
+   
+}
+.sub-address p{
+    color:white;
+}
+
+.sub-address i{
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.692);
+
+}
+
+
+
+@media screen and (max-width:588px) {
+
+
+    .header {
+
+        flex-direction: column;
+        height: auto;
+        position: relative;
+
+    }
+
+    .logo h2 {
+
+
+        width: 175px;
+        margin-bottom: 20px;
+
+    }
+
+
+    .links {
+
+        margin-top: 1rem;
+    }
+
+    .links-container {
+        display: none;
+    }
+
+    .links li {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        width: 1rem;
+        height: 2rem;
+        font-size: 2rem;
+        top: 1.5rem;
+        right: 2rem;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+
+    .contact-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+
+    .contact-form {
+        width: 100%;
+
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact-form form input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .contact-form form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+    .contact-form form .btn {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: rgb(47, 47, 117);
+        border: none;
+
+    }
+
+    .contact-address {
+
+        width: 100%;
+        padding: 20px;
+        margin: auto !important;
+    }
+
+    .sub-address {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        justify-content: center;
+     
+
+
+
+    }
+
+    .sub-address p {
+        color: white;
+    }
+
+    .sub-address i {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.692);
+
+    }
+
+
+
+}
